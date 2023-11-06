@@ -1,0 +1,21 @@
+body{
+    
+    width: 80vh;
+}
+.rulet{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    height: 4vh;
+    width: 10vh;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+.enviar{
+    height: 2vh;
+    width: 6vh;
+    border-radius: 10px;
+    background-color: rgb(202, 139, 44);
+}
