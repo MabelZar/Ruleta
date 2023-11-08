@@ -5,7 +5,7 @@ const nom =[];
 
 function names(){
     let ingresoName;
-    for (let i=0;i<=1;i++){
+    for (let i=0;i<=3;i++){
         ingresoName =prompt("Ingresa tu nombre:"," ");
         nom.push(ingresoName)
     }
