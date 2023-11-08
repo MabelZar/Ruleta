@@ -16,7 +16,7 @@ function girar(){
 girar();
 
 function premio(premios){
-    let indexRandom=Math.round(Math.random()*(nom.length-1));//obtener de forma aleatoria el indice del ganador
+    let indexRandom=Math.round(Math.random()*(nom.length)-1);//obtener de forma aleatoria el indice del ganador(le quite el -1 al nom length)
     let winner=nom[indexRandom];//se obtiene al ganador en base al indice aleatorio
 document.querySelector('.mostrarGanador').innerHTML='participante: '+ winner +' ganaste un descuento de '+ premios;
 //crear aqui
@@ -25,11 +25,12 @@ function calcular(rand){
     valor = rand/360;
     valor=(valor - parseInt(valor.toString().split(".")[0]))*360;
     ruleta.style.transform="rotate("+rand+"deg)";
+   //ruleta.style.display= inline;
 
     setTimeout(()=>{//para que dure 5 s
         switch(true){
             case valor >0 && valor <=45:
-            premio("10% desc");
+            premio("40% desc");
             break;
             case valor >45 && valor <=90:
             premio("8% desc");
@@ -45,6 +46,12 @@ function calcular(rand){
             break;
             case valor >225 && valor <=270:
             premio("50% desc");
+            break;//añadiendo valores
+            case valor >270 && valor <=315:
+            premio("nuevo 1");
+            break;
+            case valor >315 && valor <=360:
+            premio("nuevo 2");
             break;
         }
     },5000);

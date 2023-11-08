@@ -30,6 +30,12 @@ button{
     border-color: rgb(229, 190, 34) transparent transparent transparent;
 }
 img{
-   border-radius: 300px;
+  border-radius: 300px;
     transition: all 5s;
+}
+/*.container1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
 }
