@@ -9,33 +9,44 @@
 
   <body>
     <h1>Bienvenido al juego</h1>
+    <div>
+      <div>
+        <label>Ingresa un nombre => </label>
+        <input type="text" id="participanteTxt" />
+      </div>
+      <div>
+        <button onclick="aniadirParticipante()" id="aniadirParticipanteBtn">
+          Aniadir Participante
+        </button>
+      </div>
+    </div>
 
     <div class="rulet">
       <div>
         <p>Jugadores</p>
         <ul id="gamers"></ul>
       </div>
+
       <!--inniciando ruleta-->
       <div id="premio">
-        
         <p class="contadorParticipantes"></p>
       </div>
+
       <!--vara-->
-      <div class="container1">
+      <div >
         <div class="vara"></div>
-        <div >
+        <div class="container1">
           <img src="images.png" id="ruleta" />
           <p class="mostrarGanador">El ganador es:.....</p>
         </div>
       </div>
+
       <div>
         <p>Ganadores</p>
         <ul id="idWinners"></ul>
       </div>
     </div>
-    <div>
     
-    </div>
   </body>
   <script src="myJs/script.js"></script>
   <script src="myJs/winers.js"></script>

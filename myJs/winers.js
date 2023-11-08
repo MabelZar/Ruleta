@@ -2,23 +2,27 @@
 const ruleta=document.querySelector('#ruleta');
 ruleta.addEventListener('click',girar);
 giros =0; 
-//const nom=[];
+//const win=[];
 
 function girar(){
   
-    if(giros<5){
+    if(giros<3){
     let rand=Math.random()*7200;
     calcular(rand);
     giros++;
-    document.querySelector('.contadorParticipantes').innerHTML= 'Jugada n° '+giros;
+    document.querySelector('.contadorParticipantes').innerHTML= 'N° de intentos '+giros;
     }
 }
-girar();
+
 
 function premio(premios){
-    let indexRandom=Math.round(Math.random()*(nom.length)-1);//obtener de forma aleatoria el indice del ganador(le quite el -1 al nom length)
+    let indexRandom=Math.round(Math.random()*(nom.length-1));//obtener de forma aleatoria el indice del ganador(le quite el -1 al nom length)
     let winner=nom[indexRandom];//se obtiene al ganador en base al indice aleatorio
-document.querySelector('.mostrarGanador').innerHTML='participante: '+ winner +' ganaste un descuento de '+ premios;
+    document.querySelector('.mostrarGanador').innerHTML='participante: '+ winner +' ganaste un descuento de '+ premios;
+    //añadiendo aqui
+   
+   addGanadores(winner + " ganó " + premios);
+    
 //crear aqui
 }
 function calcular(rand){
@@ -26,6 +30,8 @@ function calcular(rand){
     valor=(valor - parseInt(valor.toString().split(".")[0]))*360;
     ruleta.style.transform="rotate("+rand+"deg)";
    //ruleta.style.display= inline;
+   //https://www.w3schools.com/howto/howto_js_add_class.asp
+   
 
     setTimeout(()=>{//para que dure 5 s
         switch(true){
@@ -57,15 +63,18 @@ function calcular(rand){
     },5000);
 }
 
-function addGanadores(){//añadir el parametro para mostrar //que debo crear en crear aqui
-    let resultado=document.getElementById('idWinners');
-    resultado.innerHTML='';
+function addGanadores(winnerAndPremio){//añadir el parametro para mostrar //que debo crear en crear aqui
+    let lista=document.getElementById('idWinners');
+    //resultado.innerHTML='';
 
-     for(let ganador of nom){
+     /*for(let ganador of nom){
         let datoNombre=document.createElement('li');
         datoNombre.innerHTML=ganador
         resultado.appendChild(datoNombre);
-         }
+         }*/
+         let winnerElement = document.createElement('li');
+         winnerElement.innerHTML = winnerAndPremio;
+         lista.appendChild(winnerElement);
 
 }
 //mostrarGanadores()
