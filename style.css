@@ -1,5 +1,4 @@
 body{
-    
     width: 80vh;
 }
 .rulet{
@@ -32,4 +31,18 @@ button{
 img{
    border-radius: 300px;
     transition: all 5s;
+}
+.neon {
+	color: #fff;
+	margin-top: 30%;
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
 }
