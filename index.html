@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruleta</title>
-    <link href="style.css" rel="styleSheet">
-</head>
+    <link href="style.css" rel="styleSheet" />
+  </head>
 
-<body>
+  <body>
     <h1>Bienvenido al juego</h1>
 
     <div class="rulet">
+      <div>
+        <p>Jugadores</p>
+        <ul id="gamers"></ul>
+      </div>
+      <!--inniciando ruleta-->
+      <div id="premio">
+        
+        <p class="contadorParticipantes"></p>
+      </div>
+      <!--vara-->
+      <div class="container1">
+        <div class="vara"></div>
         <div>
-            <p>Jugadores</p>
-            <textarea name="" id="area" rows="1" cols="18">Nombre</textarea>
-            <button  id="idBtn" class="enviar"> enviar</button>
-
-
+          <img src="images.png" id="ruleta" />
+          <p class="mostrarGanador">El ganador es:.....</p>
         </div>
-        <img src="imgRuleta.jpg" id="imagen" height="500vh">
-        <div>
-            <p>Ganadores</p>
-
-            <ul id="listWinners">
-                
-            </ul>
-
-        </div>
+      </div>
+      <div>
+        <p>Ganadores</p>
+        <ul id="idWinners"></ul>
+      </div>
     </div>
     <div>
-        <button>Jugar</button>
+    
     </div>
-
-
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="myJs/script.js"></script>
+  <script src="myJs/winers.js"></script>
 </html>

@@ -17,5 +17,19 @@ button{
     height: 2vh;
     width: 6vh;
     border-radius: 10px;
-    background-color: rgb(202, 139, 44);
+    background-color: rgb(228, 193, 51);
+}
+/*iniciando ruleta*/
+
+.vara{
+    margin: auto;
+    width:0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 60px 30px 10px 10px;
+    border-color: rgb(229, 190, 34) transparent transparent transparent;
+}
+img{
+   border-radius: 300px;
+    transition: all 5s;
 }
