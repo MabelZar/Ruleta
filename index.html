@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruleta</title>
-    <link href="style.css" rel="styleSheet" />
-  </head>
 
-  <body>
-    <h1 class="neon">Bienvenido al juego</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruleta</title>
+  <link href="style.css" rel="styleSheet" />
+</head>
 
-    <div class="rulet">
-      <div>
-        <p class="jugadores">Jugadores</p>
-        <ul id="gamers"></ul>
-      </div>
-      <!--inniciando ruleta-->
-      <div id="premio">
-        
-        <p class="contadorParticipantes"></p>
-      </div>
-      <!--vara-->
-      <div class="container1">
-        <div class="vara"></div>
-        <div>
-          <img src="images.png" id="ruleta" />
-          <p class="mostrarGanador">El ganador es:.....</p>
-        </div>
-      </div>
-      <div>
-        <p class="jugadores">Ganadores</p>
-        <ul id="idWinners"></ul>
-      </div>
+<body>
+  
+  <h1 class="neon">Bienvenido al juego</h1>
+  <div class="grupo1">
+    <div>
+      <label>Ingresa un nombre => </label>
+      <input type="text" id="participanteTxt" />
     </div>
     <div>
-    
+      <button onclick="aniadirParticipante()" id="aniadirParticipanteBtn">
+        Añadir Participante
+      </button>
     </div>
-  </body>
-  <script src="myJs/script.js"></script>
-  <script src="myJs/winers.js"></script>
+  </div>
+
+  <div class="rulet">
+    <div>
+      <p class="jugadores">Jugadores</p>
+      <ul id="gamers"></ul>
+    </div>
+    <div class="grupo2">
+      <!--inniciando ruleta-->
+      <div id="premio">
+        <p class="contadorParticipantes"></p>
+      </div>
+
+      <!--vara-->
+
+      <div class="vara"></div>
+      <div class="container1">
+        <img class="img" src="images.png" id="ruleta" />
+        <p class="mostrarGanador">El ganador es:.....</p>
+      </div>
+
+    </div>
+    <div>
+      <p class="jugadores">Ganadores</p>
+      <ul id="idWinners"></ul>
+    </div>
+  </div>
+
+</body>
+<script src="myJs/script.js"></script>
+<script src="myJs/winers.js"></script>
+
 </html>
