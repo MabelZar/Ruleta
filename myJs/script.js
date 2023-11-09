@@ -3,25 +3,25 @@ window.onload=function(){
 
 const nom =[];
 
-/* function names(){
-    let ingresoName;
-    for (let i=0;i<=3;i++){
-        ingresoName =prompt("Ingresa tu nombre:"," ");
-        nom.push(ingresoName)
-    }
-} */
-  
 function mostrarPersonas(){
-    let resultado=document.getElementById('gamers');
+   let resultado=document.getElementById('gamers');
     resultado.innerHTML='';
 
      for(let persona of nom){
         let datoNombre=document.createElement('li');
         datoNombre.innerHTML=persona
-        resultado.appendChild(datoNombre);
-         }
+       resultado.appendChild(datoNombre);
 
+//provando
+//let prueba1=document.getElementById('li')
+        //if(datoNombre==winner){
+         //resultado.removeChild(datoNombre)
+           // }else{
+            //console.info("que hay aqui")
+            //}
+         }        
 }
+
 
 function aniadirParticipante() {
     let nombreParticipante = document.getElementById('participanteTxt').value;
@@ -32,6 +32,8 @@ function aniadirParticipante() {
         document.getElementById('aniadirParticipanteBtn').disabled = true;
     }
 }
+
+
 
 (function(){//funcion anonima autoinvocada, se ejecuta automaticamente/eliminarlo luego
     nom.push('Eddi');
