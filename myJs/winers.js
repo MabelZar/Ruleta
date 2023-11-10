@@ -80,13 +80,9 @@ function premiar(premios) {
 function addGanadores(winnerAndPremio) {
   let lista = document.getElementById("idWinners");
   //resultado.innerHTML='';
-
   let winnerElement = document.createElement("li");
   winnerElement.innerHTML = winnerAndPremio;
   lista.appendChild(winnerElement);
-
-  //.removeChild(winner);
 }
-//------------
 
 document.querySelector("#ruleta").addEventListener("click", girar);
