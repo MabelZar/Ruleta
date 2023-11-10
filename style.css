@@ -1,42 +1,39 @@
-body{
-    
-    width: 80vh;
+body {
+  width: 80vh;
 }
-.rulet{
-    display: flex;
-    justify-content: space-around;
+.rulet {
+  display: flex;
+  justify-content: space-around;
 }
 
-button{
-    height: 4vh;
-    width: 10vh;
-    border-radius: 10px;
-    background-color: blanchedalmond;
+button {
+  height: 4vh;
+  width: 10vh;
+  border-radius: 10px;
+  background-color: blanchedalmond;
 }
-.enviar{
-    height: 2vh;
-    width: 6vh;
-    border-radius: 10px;
-    background-color: rgb(228, 193, 51);
+.enviar {
+  height: 2vh;
+  width: 6vh;
+  border-radius: 10px;
+  background-color: rgb(228, 193, 51);
 }
 /*iniciando ruleta*/
 
-.vara{
-    margin: auto;
-    width:0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 60px 30px 10px 10px;
-    border-color: rgb(229, 190, 34) transparent transparent transparent;
+.vara {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-top: 100px solid blue;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
 }
-img{
+img {
   border-radius: 300px;
-    transition: all 5s;
-    
+  transition: all 5s;
 }
-.container1{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
