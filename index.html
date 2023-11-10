@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruleta</title>
     <link href="style.css" rel="styleSheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Jost:wght@300;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <h1>Bienvenido al juego</h1>
-    <div>
+    <h1 class="neon">Obtén tu descuento aqui!!!!!</h1>
+    <div class="grupo1">
       <div>
-        <label>Ingresa un nombre => </label>
+        <label>Ingresa tu nombre : </label>
         <input type="text" id="participanteTxt" />
       </div>
       <div>
@@ -23,7 +26,7 @@
 
     <div class="rulet">
       <div>
-        <p>Jugadores</p>
+        <p class="jugadores">Participantes:</p>
         <ul id="gamers"></ul>
       </div>
 
@@ -36,18 +39,18 @@
       <div >
         <div class="vara"></div>
         <div class="container1">
-          <img src="images.png" id="ruleta" />
+          <img class="img" src="images.png" id="ruleta" />
           <p class="mostrarGanador">El ganador es:.....</p>
         </div>
       </div>
 
       <div>
-        <p>Ganadores</p>
+        <p class="jugadores">Ganadores</p>
         <ul id="idWinners"></ul>
       </div>
     </div>
     
   </body>
-  <script src="myJs/script.js"></script>
-  <script src="myJs/winers.js"></script>
+  <script src="myJs/players.js"></script>
+  <script src="myJs/rulet&winners.js"></script>
 </html>

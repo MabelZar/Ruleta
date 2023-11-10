@@ -72,7 +72,7 @@ function premiar(premios) {
   }
 
   document.querySelector(".mostrarGanador").innerHTML =
-    "participante: " + winner + " ganaste un descuento de " + premios;
+    "participante: " + winner + " ganaste un descuento de " + premios+ "!!!!!!!!!!!";
 
   addGanadores(winner + " obtuvo el " + premios);
 }

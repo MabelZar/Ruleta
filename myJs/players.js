@@ -14,7 +14,7 @@ function aniadirParticipante() {//onclic del boton
   document.getElementById("participanteTxt").value = '';
 }
 
-//(function () {
+//(functionbmvbm () {
   //funcion anonima autoinvocada, se ejecuta automaticamente/eliminarlo luego
   
   //let resultado = document.getElementById("gamers");

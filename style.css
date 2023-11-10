@@ -1,5 +1,7 @@
 body {
   background-color: turquoise;
+  font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Jost', sans-serif;
 }
 .rulet {
   display: flex;
@@ -10,14 +12,10 @@ button {
   height: 4vh;
   width: 10vh;
   border-radius: 10px;
-  background-color: blanchedalmond;
+  background-color: rgb(236, 213, 79);
+  margin-left: 10px;
 }
-.enviar {
-  height: 2vh;
-  width: 6vh;
-  border-radius: 10px;
-  background-color: rgb(228, 193, 51);
-}
+
 /*iniciando ruleta*/
 
 .vara {
@@ -74,7 +72,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-block-end: 15px;
 }
 
 .grupo2 {
@@ -82,6 +80,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block-end: 15px;
 }
 
 .img {
@@ -102,4 +101,8 @@ img {
   margin-top: 5vh;
 display: flex;
 justify-content: center;
+}
+.contadorParticipante{
+  display: flex;
+
 }
