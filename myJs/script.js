@@ -27,7 +27,7 @@ function aniadirParticipante() {//onclic del boton
   document.getElementById("participanteTxt").value = '';
 }
 
-(function () {
+/*(function () {
   //funcion anonima autoinvocada, se ejecuta automaticamente/eliminarlo luego
   
   let resultado = document.getElementById("gamers");
@@ -41,14 +41,6 @@ function aniadirParticipante() {//onclic del boton
   resultado.appendChild(participante02);
   resultado.appendChild(participante03);
 })();
+*/
 
-//---------
-//function eliminar(winner) {
-//for (var i =0; i < nom.length; i++) {
-//if (nom[i].winner === winner) {
-//  nom.splice(nom.indexOf,1);
-//  break;
-//}
-//}
-//  console.info(winner);
-//}
+
